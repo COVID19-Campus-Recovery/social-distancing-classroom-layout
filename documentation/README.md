@@ -12,14 +12,16 @@ Below are the steps to determine the optimal socially-distanced classroom layout
   * See <i> Fixed Seats Model I/O</i> 
   * For instructions on how to generate the (x,y)-coordinates from a CAD file (see <i> Tutorial - Extracting coordinates from a CAD file using AutoCAD </i>)
 
-* **Step 2**: Optimize selection of seats
+* **Step 2**: Run <i> main.py </i> in <i> code </i>
+
+  **Step 2a**: Optimize selection of seats
 
   * Source <i> fixed_seats_model.py </i> in <i> code </i> to call function: <i> fixed_seats_model </i>
   * Generate an output Excel file by appending coordinates of selected seats to the end of input coordinate file from **Step 1**
   * Some parameters including social distance threshold need to be specified
   * Example usage and specification of parameters can be found in <i> main.py </i> in <i> code </i>
 
-* **Step 3**: Visualize selection of seats
+  **Step 2b**: Visualize selection of seats
 
   * Source <i> plot_results.py </i> in <i> code </i> to call function: <i> plot_layout_result </i>
   * Generate an output pdf file containing visualization of the classroom layout based on coordinate file generated in **Step 2**
