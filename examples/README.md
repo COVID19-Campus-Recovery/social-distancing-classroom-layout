@@ -1,8 +1,7 @@
 # Discription of examples
-In this "examples" directory, we provide a toy example to play with our "fixed_seat_model.py" and "plot_results.py" in the "code" directory.
+In this "examples" directory, we provide a toy example to play with our "fixed_seat_model.py" and "plot_results.py" in "code".
 
-The input file for "fixed_seat_model.py" is "example_all_coordinates.xlsx" in this directory, which is a modified layout of Clough 152 mentioned in 
-the "insights" directory". For this layout, we consider all preventions (instructor, doors, aisles) for the seating arrangement. Therefore, the input file includes:
+The input file for "fixed_seat_model.py" is "example_all_coordinates.xlsx" in this directory, which is a modified layout of Clough 152 mentioned in "insights". For this layout, we consider all preventions (instructor, doors, aisles) for the seating arrangement. Therefore, the input file includes:
 * **(x,y) coordinates of all seats**
 * **(x,y) coordinate of the instructor**: If you do not consider the movement of the instructor, this can be useful. In this example, we consider the movement of the instructor.
 * **(x,y) coordinates of all doors**
