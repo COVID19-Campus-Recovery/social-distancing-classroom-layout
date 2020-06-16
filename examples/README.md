@@ -7,6 +7,7 @@ the "insights" directory". For this example, we consider all preventions (instru
 * **(x,y) coordinate of the instructor**: If you do not consider the movement of the instructor, this can be useful. In this example, we consider the movement of the instructor.
 * **(x,y) coordinates of all doors**
 * **(x,y) coordinates of all aisles**
+
 Other inputs that need to be clarified in "fixed_seat_model.py" are:
 * **d2**: 216(inches), the safety distance from doors.
 * **d3**: 81(inches), the safety distance from aisles. This value makes sure seats exactly near the aisles will not be considered
