@@ -110,7 +110,7 @@ def fixed_seats_model(data_file, d0, d1 = 0, d2 = 0, d3 = 0, firstrow: bool = Fa
     model = Model('fixed_seat_layout')
 
     ## Set Gurobi parameters
-    model.setParam('OutputFlag', True)
+    model.setParam('OutputFlag', False)
     ## objective 2, 3, 4 takes long time to run, so adjust some parameters.
     if type > 1:
         model.setParam('MIPGap', 0.05)
@@ -204,14 +204,14 @@ def fixed_seats_model(data_file, d0, d1 = 0, d2 = 0, d3 = 0, firstrow: bool = Fa
             for i in range(len(seat_selected) - 1):
                 for j in range(i + 1, len(seat_selected)):
                     selected_distance.append(distance[seat_selected[i], seat_selected[j]])
-            print('smallest distance: {}'.format(np.min(selected_distance)))
+            # print('smallest distance: {}'.format(np.min(selected_distance)))
             return model.objVal, np.array(seat_loc_selected), seat_selected, np.min(selected_distance)
         else:
             return model.objVal, np.array(seat_loc_selected), seat_selected
 
 
 if __name__ == "__main__":
-    data_file = "/Users/sunyuming/Downloads/example_all_coordinates.xlsx" # change the path here on your own computers!!! the excel file can be found in examples directory
+    data_file = "example_all_coordinates.xlsx" # change the path here on your own computers!!! the excel file can be found in examples directory
     
     ## All preventions: the first row; doors; aisles
     firstrow = True
@@ -222,7 +222,7 @@ if __name__ == "__main__":
                       type=1, output_filename_affix='6ft_prevention')
     
     ## No prevention: if considering no prevention, please do not input locations of those features (the first row or instructor's location; doors; aisles)
-    # fixed_seats_model(data_file, d0=6 * 12, type=1, output_filename_affix='6ft')
+    # fixed_seats_model(data_file, d0=6 * 12)
 
 
 
