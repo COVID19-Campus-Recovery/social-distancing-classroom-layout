@@ -196,7 +196,7 @@ def fixed_seats_model(data_file, d0, d1 = 0, d2 = 0, d3 = 0, firstrow: bool = Fa
                 seat_selected.append(s)
                 coordinates = coordinates.append(pd.DataFrame([['selected_seat', seat_loc[s][0], seat_loc[s][1]]],
                                                               columns=['Feature', 'X', 'Y']))
-
+        # save the output file.
         coordinates.to_excel(filename + '_' + output_filename_affix + '.xlsx', index=False)
 
         if type == 1 : # for type 1, print and return the minimum distance between selected seats as well.
@@ -211,17 +211,19 @@ def fixed_seats_model(data_file, d0, d1 = 0, d2 = 0, d3 = 0, firstrow: bool = Fa
 
 
 if __name__ == "__main__":
-    data_file = 'clough152_coordinates.xlsx'
+    data_file = "/Users/sunyuming/Downloads/example_all_coordinates.xlsx" # change the path here on your own computers!!! the excel file can be found in examples directory
     
-    # No prevention
-    fixed_seats_model(data_file, d0=6 * 12, type=1, output_filename_affix='6ft')
-    
-    # All preventions: the first row; doors; aisles
+    ## All preventions: the first row; doors; aisles
     firstrow = True
     firstrowy = 2521.0003
     d2 = 216
     d3 = 81
-
     fixed_seats_model(data_file, d0=6 * 12, d2=d2, d3=d3, firstrow=firstrow, firstrow_y=firstrowy,
                       type=1, output_filename_affix='6ft_prevention')
+    
+    ## No prevention: if considering no prevention, please do not input locations of those features (the first row or instructor's location; doors; aisles)
+    # fixed_seats_model(data_file, d0=6 * 12, type=1, output_filename_affix='6ft')
+
+
+
 
