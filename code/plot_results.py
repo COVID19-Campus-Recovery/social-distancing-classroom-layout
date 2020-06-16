@@ -51,14 +51,14 @@ def plot_layout_result(data_file, firstrow_y=0.0):
 
     ## plot doors if input.
     if len(door_loc) > 0:
-        axs.plot(door_loc[:, 0], door_loc[:, 1], "o", markersize=290, color='lightgrey')
+        axs.plot(door_loc[:, 0], door_loc[:, 1], "o", markersize=380, color='lightgrey')
         s3, = axs.plot(door_loc[:, 0], door_loc[:, 1], "s", markersize=15, color='orange')
         legend_objects.append(s3)
         legend_labels.append('Doors')
 
     ## plot aisle if input.
     if len(aisle_loc) > 0:
-        axs.plot(aisle_loc[:, 0], aisle_loc[:, 1], "o", markersize=105, color='lightgrey')
+        axs.plot(aisle_loc[:, 0], aisle_loc[:, 1], "o", markersize=120, color='lightgrey')
         s4, = axs.plot(aisle_loc[:, 0], aisle_loc[:, 1], "s", markersize=5, color='yellow')
         legend_objects.append(s4)
         legend_labels.append('Aisles')
@@ -82,10 +82,20 @@ def plot_layout_result(data_file, firstrow_y=0.0):
     legend_objects.append(s0)
     legend_labels.append('Unselected seats')
 
+    ## add legend.
     plt.legend(legend_objects, legend_labels, loc='lower center', ncol=len(legend_objects), bbox_to_anchor=(0.5, -0.1))
+
+    ## save output file.
     plt.savefig(filename + "_plot.pdf", dpi=500)
 
 
 if __name__ == "__main__":
-    data_file = 'clough152_coordinates_6ft_prevention.xlsx'
+    data_file = "/Users/sunyuming/Downloads/example_all_coordinates_6ft_prevention.xlsx" # change the path here on your own computers!!! delete locations of those preventions first if you do not want to plot them!
     plot_layout_result(data_file, 2521.0003)
+    
+    
+    
+    
+    
+    
+    
