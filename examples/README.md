@@ -16,7 +16,7 @@ Other inputs that need to be clarified in "fixed_seats_model.py" are:
 One can simply change the path of reading the input file in "fixed_seats_model.py", run the model and then get an excel file as the output, which should be exactly the same with "example_all_coordinates_6ft_prevention.xlsx". Apart from all information contained in the input file, the output file also includes:
 * **(x,y) coordinates of all selected seats**
 
-Once getting "example_all_coordinates_6ft_prevention.xlsx", it is used as the input for "plot_results.py". Other inputs that need to be clarified in "fixed_seat_model.py" are:
+Once getting "example_all_coordinates_6ft_prevention.xlsx", it is used as the input for "plot_results.py". Other inputs that need to be clarified in "plot_results.py" are:
 * **firstrow_y**: 2521.0003, the y-coordinate of seats in the first row.
 
 The user should change the path of reading "example_all_coordinates_6ft_prevention.xlsx" in "plot_results.py", run the model, and then get a pdf file, which plots the locations of the first row, the doors, the aisles, the selected seats and unselected seats. The pdf file should be "example_all_coordinates_6ft_prevention_plot.pdf".
