@@ -20,4 +20,4 @@ Below are the steps to determine the optimal socially-distanced classroom layout
 * **Step 3**: Run <i> plot_results.py </i> in <i> code </i> to visualize selection of seats
 
   * Generate an output pdf file containing visualization of the classroom
-  * All features in the input coordinate file will be plotted
+  * All features in the input coordinate file will be plotted (use parameter <i>firstrow_y</i> to visualize prevention of leaving first row empty)
