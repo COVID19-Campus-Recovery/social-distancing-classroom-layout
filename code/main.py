@@ -36,11 +36,12 @@ from plot_results import plot_layout_result
 ## change to your path to input file. This example excel file can be found in examples directory
 file = "example_all_coordinates.xlsx"  # input file name, required parameter
 
+## other parameters:
 social_distance = 6 * 12  # inches, required parameter
 door_distance = 216  # inches, optional parameter
 aisle_distance = 81  # inches, optional parameter
-firstrow = True  # leave first row empty
-firstrowy = 2521.0003  # the common y-coordinate of seats in first row
+firstrow = True  # leave first row empty, optional parameter
+firstrowy = 2521.0003  # the common y-coordinate of seats in first row, optional parameter
 output_filename_affix = '6ft_prevention'  # append this string at the end of input file name as output file name.
 
 ## this line will create an output file: example_all_coordinates_6ft_prevention.xlsx
@@ -50,5 +51,5 @@ fixed_seats_model(file, d0=social_distance, d2=door_distance, d3=aisle_distance,
 ## change to your path to output file. This example excel file can be found in examples directory
 result_file = "example_all_coordinates_6ft_prevention.xlsx"  # file to be plotted
 
-## this line will creat an pdf file of figure
+## this line will creat a pdf file of classroom layout plot
 plot_layout_result(result_file, firstrow_y=firstrowy)
