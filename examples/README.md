@@ -1,4 +1,4 @@
-# Discription of examples
+# Description of examples
 In this "examples" directory, we provide a toy example to play with our "fixed_seats_model.py" and "plot_results.py" in "code".
 
 The input file for "fixed_seats_model.py" is "example_all_coordinates.xlsx" in this directory, which is a modified layout of Clough 152 mentioned in "insights". For this layout, we consider all preventions (instructor, doors, aisles) for the seating arrangement. Therefore, the input file includes:
