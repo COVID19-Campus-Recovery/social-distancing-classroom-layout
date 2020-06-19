@@ -6,3 +6,6 @@ This repository includes the following folders:
 * **Code**: The actual code needed to generate socially-distanced classroom layouts
 * **Examples**: Example input files and output files for selected classrooms. These can be used to make sure you are correctly running the code.
 * **Insights**: A folder with summaries of our findings so far. 
+
+
+Read more about this project <a href=https://github.com/COVID19-Campus-Recovery/campus-recovery-modeling > here </a>
