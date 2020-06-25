@@ -1,6 +1,10 @@
 # social-distancing-classroom-layout
 A repository with code to design socially-distanced classroom layouts. 
 
+We'd love to know if you are using this code! Please fill out this <b> <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=u5ghSHuuJUuLem1_MvqggwlsM-9yualNlljvVomgnNFUQVVJUFcwRFpVREdRQkZDVDk0NEZQQlVZVi4u"> this form </a> </b> if you found this code useful or have feedback
+
+
+
 This repository includes the following folders:
 * **Documentation**: documentation of how to convert a classroom's seating layout into an appropriate input file and run the code. The documentation also describes what the output files look like and how to visualize them.
 * **Code**: The actual code needed to generate socially-distanced classroom layouts
