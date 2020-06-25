@@ -20,3 +20,7 @@ The code in this repository was developed by the following students:
 * <b> <a href="https://www.linkedin.com/in/yogesh-avhad"> Yogesh Avhad</a></b>, Master's Student, Supply Chain
 * <b> <a href="https://www.linkedin.com/in/yuming-sun-573901151"> Yuming Sun</a></b>, Master's Student, Operations Research
 * <b> <a href="https://www.linkedin.com/in/shimeng-zhang146a94149/"> Shimeng Zhang</a></b>, Master's Student, Operations Research
+
+**Thank you to our seed grant sponsors**
+
+This work is supported by seed grants through Georgia Tech ISYE’s Thos and Clair Muller Research Endowment Fund and the Georgia Tech EVPR COVID-19 Rapid Response Seed Grant Program.
