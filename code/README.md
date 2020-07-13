@@ -8,3 +8,8 @@
 ### plot_results.py
 
 * Python package: numpy, pandas, matplotlib
+
+### fixed_seats_model_with_radius.py
+
+* Software: Gurobi
+* Python package: gurobipy, numpy, pandas, shapely
